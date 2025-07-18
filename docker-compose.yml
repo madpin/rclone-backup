@@ -11,7 +11,7 @@ services:
       - service-database:/database
 
   backup:
-    image: adrienpoupa/rclone-backup:latest
+    image: madpin/rclone-backup:latest
     # environment:
     #   RCLONE_REMOTE_NAME: 'RcloneBackup'
     #   RCLONE_REMOTE_DIR: '/RcloneBackup/'

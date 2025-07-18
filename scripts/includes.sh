@@ -33,7 +33,7 @@ function check_rclone_connection() {
     rclone ${RCLONE_GLOBAL_FLAG} config show "${RCLONE_REMOTE_NAME}" > /dev/null 2>&1
     if [[ $? != 0 ]]; then
         color red "rclone configuration information not found"
-        color blue "Please configure rclone first, check https://github.com/AdrienPoupa/rclone-backup/blob/master/README.md#backup"
+        color blue "Please configure rclone first, check https://github.com/madpin/rclone-backup/blob/master/README.md#backup"
         exit 1
     fi
 
